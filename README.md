@@ -6,6 +6,7 @@ I'm fairly new to JavaScript in general and this was my first time touching on t
 I found MongoDB difficult to impliment for the first time however this was mostly due to install issues with the new macOSX(Catalina) making it harder than it needed to be.<br>
 React was quite cool to work with and it was cool seeing how something worked that was quite familiar after doing my Ruby on Rails web app.
 
+### Screenshots 
 
 ![Landing page screenshot](src/assets/1.png)
 ![Update TODO screenshot](src/assets/2.png)
