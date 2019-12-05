@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 
-// React functional component?
+// React functional component? Action for the display
+// Adding className for cross out when completed!
 const Todo = props => (
   <tr>
-    <td>{props.todo.todo_description}</td>
-    <td>{props.todo.todo_responsible}</td>
-    <td>{props.todo.todo_priority}</td>
+    <td className={PopStateEvent.todo.todo_completed ? "completed" : ""}>{props.todo.todo_description}</td>
+    <td className={PopStateEvent.todo.todo_completed ? "completed" : ""}>{props.todo.todo_responsible}</td>
+    <td className={PopStateEvent.todo.todo_completed ? "completed" : ""}>{props.todo.todo_priority}</td>
     <td>
       <Link to={"/edit/"+props.todo._id}>Edit</Link>
     </td>

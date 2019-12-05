@@ -17,7 +17,7 @@ class App extends Component {
           {/* Nav bar div, including bootstrap className */}
           
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="https://github.com/christopherdalziel" target="_blank">
+            <a className="navbar-brand" href="https://github.com/christopherdalziel" target="_blank" rel="noopener noreferrer">
               <img src={logo} width="30" height="30" alt="My first MERN project" />
             </a>
             <Link to="/" className="navbar-brand">MERN-Stack TODO App!</Link>
