@@ -6,7 +6,14 @@ export default class editTodo extends Component {
   // Constructor
   constructor(props){
     super(props);
-    
+
+    // Creating the event handler bindings
+    this.onChangeTodoDescription = this.onChangeTodoDescription.bind(this);
+    this.onChangeTodoResponsible = this.onChangeTodoResponsible.bind(this);
+    this.onChangeTodoPriority = this.onChangeTodoPriority.bind(this);
+    this.onChangeTodoCompleted = this.onChangeTodoCompleted.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+
     this.state = {
       todo_description: '',
       todo_responsible: '',
@@ -16,7 +23,7 @@ export default class editTodo extends Component {
   }
 
   componentDidMount(){
-    axios.get('https://localhost:4000/todos/'+this.props.match.params.id)
+    axios.get('http://localhost:4000/todos/'+this.props.match.params.id)
       .then(response => {
         this.setState({
           todo_description: response.data.todo_description,
@@ -75,36 +82,21 @@ export default class editTodo extends Component {
   render() {
     return (
       <div>
-        <h3>TODO: Update</h3>
+        <h3>Update TODO:</h3>
         <form onSubmit={this.onSubmit}>
-          <div class="form-group">
+          <div className="form-group">
             <label>Description:</label>
             <input type="text"
                    className="form-control"
                    value={this.state.todo_description}
                    onChange={this.onChangeTodoDescription} />
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <label>Responsible:</label>
               <input type="text"
                      className="form-control"
                      value={this.state.todo_responsible}
                      onChange={this.onChangeTodoResponsible} />
-          </div>
-        
-          <div className="form-group">
-            <label>Description: </label>
-            <input type="text" 
-                   className="form-control" 
-                   value={this.state.todo_description} 
-                   onChange={this.onChangeTodoDescription} />
-            </div>
-            <div className="form-group">
-            <label>Responsible: </label>
-            <input type="text" 
-                   className="form-control" 
-                   value={this.state.todo_responsible} 
-                   onChange={this.onChangeTodoResponsible} />
           </div>
           <div className="form-group">
             <div className="form-check form-check-inline">
@@ -151,7 +143,7 @@ export default class editTodo extends Component {
               </div>
               <br/>
               <div className="form-group">
-                <input type="sbumit value" value="Update TODO" classname="btn btn-primary" />
+                <button type="submit value" value="Update" className="btn btn-primary">Update</button>
               </div>
             </div>
         </form>

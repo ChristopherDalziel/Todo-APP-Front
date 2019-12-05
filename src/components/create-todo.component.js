@@ -74,7 +74,7 @@ export default class createTodo extends Component {
   render() {
     return (
       <div style={{marginTop: 20}}>
-        <h3>Create New TODO</h3>
+        <h3>Create New TODO:</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
             <label>Description: </label>
