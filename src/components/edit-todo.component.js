@@ -30,6 +30,47 @@ export default class editTodo extends Component {
       })
   }
 
+  // Creating event handlers..
+  onChangeTodoDescription(e){
+    this.setState({
+      todo_description: e.target.value
+    });
+  }
+
+  onChangeTodoResponsible(e){
+    this.setState({
+      todo_responsible: e.target.value
+    });
+  }
+
+  onChangeTodoPriority(e){
+    this.setState({
+      todo_priority: e.target.value
+    });
+  }
+
+  onChangeTodoCompleted(e){
+    this.setState({
+      todo_completed: !this.state.todo_completed
+    });
+  }
+
+  // Submission event hanlder, creating the actual submission now we've filled out data
+  onSubmit(e){
+    e.preventDefault();
+    const obj = {
+      todo_description: this.state.todo_description,
+      todo_responsible: this.state.todo_responsible,
+      todo_priority: this.state.todo_priority,
+      todo_completed: this.state.todo_completed
+    };
+    axios.post('http://localhost:4000/todos/update/'+this.props.match.params.id, obj)
+    .then(res => console.log(res.data));
+
+    // Redirect?
+    this.props.history.push('/');
+  }
+
   // Output form so the user can edit existing values
   render() {
     return (
