@@ -41,6 +41,7 @@ export default class createTodo extends Component {
   onSubmit(e) {
     e.preventDefault();
 
+    // Printing to the console to see if the page is working since we have no backend db right now
     console.log(`Form Submitted:`)
     console.log(`Todo Description: ${this.state.todo_description}`)
     console.log(`Todo Responsible: ${this.state.todo_responsible}`)
