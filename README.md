@@ -2,7 +2,7 @@
 
 ### About The Project: 
 This was a holiday project for me and an attempt to begin getting ready for my final assestment @ Coder Academy. <br>
-I'm fairly new to JavaScript in general and this was my first time touching on the majoriy of the MERN stack, as well as the first time I had tried using Bootstrap CSS instead of writing it myself.<br>
+I'm fairly new to JavaScript in general and this was my first time touching on the majoriy of the MERN stack, as well as the first time I had tried using Bootstrap CSS instead of writing it myself.
 I found MongoDB difficult to impliment for the first time however this was mostly due to install issues with the new macOSX(Catalina) making it harder than it needed to be.<br>
 React was quite cool to work with and it was cool seeing how something worked that was quite familiar after doing my Ruby on Rails web app.
 
