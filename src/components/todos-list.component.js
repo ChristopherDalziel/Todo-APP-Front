@@ -24,7 +24,7 @@ export default class todosList extends Component {
 
   // Requesting from the DB
   componentDidMount() {
-    axios.get('http://localhost:4000/todos/')
+    axios.get(process.env.REACT_APP_BACKEND_URL + '/todos/')
       .then(response => {
         this.setState({todos: response.data});
       })

@@ -71,7 +71,7 @@ export default class editTodo extends Component {
       todo_priority: this.state.todo_priority,
       todo_completed: this.state.todo_completed
     };
-    axios.post('http://localhost:4000/todos/update/'+this.props.match.params.id, obj)
+    axios.post(process.env.REACT_APP_BACKEND_URL + '/todos/update/'+this.props.match.params.id, obj)
     .then(res => console.log(res.data));
 
     // Redirect?

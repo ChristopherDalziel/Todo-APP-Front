@@ -59,7 +59,7 @@ export default class createTodo extends Component {
     }
 
     // Making the call and linking to the end point
-    axios.post("http://localhost:4000/todos/add", newTodo)
+    axios.post(process.env.REACT_APP_BACKEND_URL + "/todos/add", newTodo)
       .then(res => console.log(res.data));
 
     // Resetting to the inital state
