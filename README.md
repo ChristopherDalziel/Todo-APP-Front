@@ -1,7 +1,7 @@
 # TODO LIST MINI PROJECT - MERN Stack
 
-![Deployed](https://friendly-archimedes-e25b4d.netlify.com/)
-![Backend Repo](https://github.com/ChristopherDalziel/Todo-APP-Back)
+[Deployed](https://friendly-archimedes-e25b4d.netlify.com/)
+[Backend Repo](https://github.com/ChristopherDalziel/Todo-APP-Back)
 
 ### About The Project: 
 This was a holiday project for me and an attempt to begin getting ready for my final assestment @ Coder Academy. <br>
