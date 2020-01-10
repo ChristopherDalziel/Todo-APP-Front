@@ -72,10 +72,11 @@ export default class editTodo extends Component {
       todo_completed: this.state.todo_completed
     };
     axios.post(process.env.REACT_APP_BACKEND_URL + '/todos/update/'+this.props.match.params.id, obj)
-    .then(res => console.log(res.data));
+    // Await the data, before redirecting.
+    .then(res => this.props.history.push('/'));
 
     // Redirect?
-    this.props.history.push('/');
+    // this.props.history.push('/');
   }
 
   // Output form so the user can edit existing values

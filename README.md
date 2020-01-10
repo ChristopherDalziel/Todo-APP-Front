@@ -1,5 +1,8 @@
 # TODO LIST MINI PROJECT - MERN Stack
 
+![Deployed](https://friendly-archimedes-e25b4d.netlify.com/)
+![Backend Repo](https://github.com/ChristopherDalziel/Todo-APP-Back)
+
 ### About The Project: 
 This was a holiday project for me and an attempt to begin getting ready for my final assestment @ Coder Academy. <br>
 I'm fairly new to JavaScript in general and this was my first time touching on the majoriy of the MERN stack, as well as the first time I had tried using Bootstrap CSS instead of writing it myself.
